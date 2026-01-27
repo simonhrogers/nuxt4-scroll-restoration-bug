@@ -4,7 +4,7 @@ This is a minimal reproduction case demonstrating a bug in Nuxt 4 where scroll p
 
 ## Bug Description
 
-**Issue:** Scroll position is not restored when navigating between pages that use different layouts, even though scroll restoration works correctly when navigating between pages with the same layout.
+**Issue:** Scroll position behaviour is INCONSISTENT across installations of Nuxt 4, depending on project complexity. In this simple repro, scroll position IS restored, but a flash of "top of screen" occurs on the layout-out transition (i.e. exiting layout flashes to top). On another repro with a more complex working project, it is not restored when navigating between pages that use different layouts, even though scroll restoration works correctly when navigating between pages with the same layout.
 
 ## Steps to Reproduce
 
@@ -16,7 +16,7 @@ This is a minimal reproduction case demonstrating a bug in Nuxt 4 where scroll p
 
 2. Navigate to the home page (`/`)
 
-3. Scroll down to section 30-40 (there's a yellow test marker)
+3. Scroll down the page.
 
 4. Navigate to "Page A" or "Page B" (both use the same default layout)
    - ✅ **Expected:** Scroll position is restored
