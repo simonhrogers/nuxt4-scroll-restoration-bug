@@ -12,3 +12,14 @@
 .layout-fade-leave-to {
   opacity: 0;
 }
+
+/* Page-specific scroll lock class used by the fixed-body reproduction page.
+   Set via `useHead({ bodyAttrs: { class: ... } })`. */
+.fixed-body {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background-color: red;
+  /* Avoid unexpected layout shift when the scrollbar disappears. */
+  width: 100vw;
+}

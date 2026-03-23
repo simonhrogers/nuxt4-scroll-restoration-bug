@@ -4,6 +4,7 @@
       <NuxtLink to="/">Home (Default Layout)</NuxtLink>
       <NuxtLink to="/page-a">Page A (Default Layout)</NuxtLink>
       <NuxtLink to="/page-b">Page B (Default Layout)</NuxtLink>
+      <NuxtLink to="/fixed-body">Fixed Body Class Page</NuxtLink>
       <NuxtLink to="/alt">Alt Layout Page</NuxtLink>
     </nav>
     <main>
